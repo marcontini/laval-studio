@@ -1,0 +1,6 @@
+# Normaliza los finales de línea: evita que un commit desde Windows
+# marque archivos enteros como modificados.
+* text=auto eol=lf
+
+*.png binary
+*.svg text eol=lf

@@ -1,0 +1,21 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Salidas de la herramienta
+*.png
+*.svg
+*.csv
+*.txt
+!docs/**/*.png
+!docs/**/*.svg
+
+# Editores
+.vscode/
+.idea/
