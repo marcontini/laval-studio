@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <!--
   Laval Studio — diseño interno de toberas de cohete de propelente sólido
   Copyright (c) 2026 Marco Contini
@@ -23,6 +28,7 @@
   --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
   --r:7px;
+  color-scheme:light;
 }
 :root[data-theme="dark"]{
   --paper:#101519; --surface:#1A2129; --sunken:#151B21;
@@ -35,6 +41,7 @@
   --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 18px rgba(0,0,0,.25);
   color-scheme:dark;
 }
+[hidden]{display:none!important}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5}
 h1,h2,h3{text-wrap:balance;margin:0}
@@ -169,6 +176,8 @@ footer.foot{margin-top:20px;font-size:11.5px;color:var(--ink-3);line-height:1.6;
   transition:opacity .18s,transform .18s;z-index:50}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header class="top">
@@ -1195,3 +1204,5 @@ for (const [k,dec] of [["dt",1],["ab",0],["pe",3],["eps",2]]){
 render();
 window.addEventListener("resize", () => { if (LAST) render(); });
 </script>
+</body>
+</html>
